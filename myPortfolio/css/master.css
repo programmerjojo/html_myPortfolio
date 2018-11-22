@@ -1,0 +1,247 @@
+/* Basic */
+*
+{
+  box-sizing: border-box;
+d}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: grey;
+}
+
+section
+{
+  padding-top: 52px;
+  height: 1000px;
+}
+
+
+
+
+
+/* Navbar */
+.navbar-default {
+    background-color: #111;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Shrikhand", cursive;
+    font-weight: 100;
+    font-size: 40px;
+    color: brown
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: brown;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: brown;
+    background-color: brown;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: brown;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+@media(min-width:768px) and (max-width: 1200px) {   /* reducing text size so nav items dont get too close to logo when resizing */
+  .navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.navbar-default .nav li a:focus {
+    color: white;
+}
+
+.navbar-default .nav li a:hover {
+    color: brown;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: brown;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: brown;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #111;
+    }
+}
+
+
+
+
+
+/* Section 1, HOME */
+#home
+{
+  background-image: url("img.jpg");
+  height: 900px;
+	width: 100%;
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#home h2
+{
+  font-size: 125px;
+	color: brown;
+	text-align: center;
+  font-weight: 800;
+
+	font-family: 'Arial';
+	-webkit-text-stroke: 4px black;
+}
+#home h3
+{
+  font-size: 60px;
+	color: brown;
+	text-align: center;
+  font-weight: 700;
+
+  font-family: 'Arial';
+	-webkit-text-stroke: 3px black;
+}
+@media only screen and (min-width: 525px) and (max-width: 767px) /* less then or 768, more then 525 */
+{
+  #home h2
+  {
+    font-size: 125px;
+    margin: 0 10px 0 10px;
+    -webkit-text-stroke: 4px black;
+    padding-bottom: 15px;
+  }
+  #home h3
+  {
+    font-size: 60px;
+    margin: 0 10px 0 10px;
+    -webkit-text-stroke: 3px black;
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 525px)/* less then or 525, more then 460 */
+{
+  #home h2
+  {
+    font-size: 125px;
+    margin: 0 10px 0 10px;
+    -webkit-text-stroke: 4px black;
+    padding-bottom: 15px;
+  }
+  #home h3
+  {
+    font-size: 60px;
+    margin: 0 10px 0 10px;
+    -webkit-text-stroke: 3px black;
+  }
+}
+@media only screen and (max-width: 460px)/* less then or 460 */
+{
+  #home h2
+  {
+    font-size: 85px;
+    margin: 0 10px 0 10px;
+    -webkit-text-stroke: 4px black;
+    padding-bottom: 15px;
+  }
+
+  #home h3
+  {
+    font-size: 55;
+    margin: 0 10px 0 10px;
+    -webkit-text-stroke: 3px black;
+  }
+}
+
+
+
+
+
+/* Section 2, ABOUT */
+#about
+{
+  background-color: #ccc;
+}
+
+
+
+
+
+/* Section 3, PORTFOLIO */
+#portfolio
+{
+	background-color: #aaa;
+}
+
+
+
+
+
+/* Section 4, CONTACT */
+#contact
+{
+  background-color: #ccc;
+}
+
+
+
+
+
+/* Section 5, FOOTER */
+footer
+{
+  background-color: #111;
+  height: 60px;
+}
